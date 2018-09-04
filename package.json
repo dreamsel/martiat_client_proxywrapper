@@ -1,0 +1,28 @@
+{
+  "name": "wrapper-proxy",
+  "version": "1.0.0",
+  "description": "wrapper proxy for martian itduel activity which relays stdin/stdout to websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "npx pkg index.js;cp ./node_modules/websocket/build/Release/*.node ./;mv index-macos wrapper-bin"
+  },
+  "keywords": [
+    "wrapper",
+    "proxy",
+    "relay",
+    "stdin",
+    "stdout",
+    "websocket"
+  ],
+  "author": "Dmytro Selin",
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^4.3.4"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "websocket": "^1.0.26"
+  }
+}
