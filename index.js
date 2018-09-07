@@ -22,6 +22,8 @@ child.stdout.on('data', (data) => {
     console.log('non-json msg from child:', strData);
   }
 });
+child.stderr.on('data', (data) => console.log('Error from child:', data.toString('utf8')));
+
 child.on('error', (err) => {
   console.log('child error', err.message, err.errno, err.path);
 });
