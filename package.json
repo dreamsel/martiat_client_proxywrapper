@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "npx pkg index.js;cp ./node_modules/websocket/build/Release/*.node ./;mv index-macos wrapper-bin"
+    "build": "npx pkg index.js"
   },
   "keywords": [
     "wrapper",
